@@ -2,6 +2,7 @@ require("dotenv").config();
 const chalk = require("chalk");
 const { program } = require("commander");
 const { preguntas } = require("./questions/questions");
+const {coordenadasMetro, coordenadasMetros} = require("./datos/datosApi");
 
 program
   .option("-c,--color <color>", "Color interfaz")
@@ -21,5 +22,7 @@ const init = async () => {
     );
     process.exit(0);
   }
+  coordenadasMetros();
 };
 init();
+
