@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 
 const preguntas = () => {
-  inquirer.prompt([
+  const respuestas = inquirer.prompt([
     {
       name: "transporte",
       type: "list",
@@ -17,7 +17,24 @@ const preguntas = () => {
         },
       ],
     },
+    {
+      name: "infoMetro",
+      message: "¿Qué información extra quiere obtener de cada parada?",
+      type: "checkbox",
+      choices: [
+        {
+          name: "Coordenadas",
+          value: "coordenadas",
+        },
+        {
+          name: "Fecha de inauguración",
+          value: "fechaInauguracion",
+        },
+      ],
+      when: (respuestas) => respuestas.transporte === "metro",
+    },
   ]);
+  return respuestas;
 };
 module.exports = {
   preguntas,
