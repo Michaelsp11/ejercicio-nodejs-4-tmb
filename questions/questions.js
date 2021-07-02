@@ -1,33 +1,42 @@
 const inquirer = require("inquirer");
+const chalk = require("chalk");
 
-const preguntas = () => {
+const preguntas = (color, abrev) => {
   const respuestas = inquirer.prompt([
     {
       name: "transporte",
       type: "list",
-      message: "¿Que tipo de transporte quieres consultar?",
+      message: !color
+        ? "¿Que tipo de transporte quieres consultar?"
+        : chalk.hex(color)("¿Que tipo de transporte quieres consultar?"),
       choices: [
         {
-          name: "Bus",
+          name: !color ? "Bus" : chalk.hex(color)("Bus"),
           value: "bus",
         },
         {
-          name: "Metro",
+          name: !color ? "Metro" : chalk.hex(color)("Metro"),
           value: "metro",
         },
       ],
     },
     {
       name: "infoMetro",
-      message: "¿Qué información extra quiere obtener de cada parada?",
+      message: !color
+        ? "¿Qué información extra quiere obtener de cada parada?"
+        : chalk.hex(color)(
+            "¿Qué información extra quiere obtener de cada parada?"
+          ),
       type: "checkbox",
       choices: [
         {
-          name: "Coordenadas",
+          name: !color ? "Coordenadas" : chalk.hex(color)("Coordenadas"),
           value: "coordenadas",
         },
         {
-          name: "Fecha de inauguración",
+          name: !color
+            ? "Fecha de inauguración"
+            : chalk.hex(color)("Fecha de inauguración"),
           value: "fechaInauguracion",
         },
       ],
@@ -35,19 +44,21 @@ const preguntas = () => {
     },
     {
       name: "errores",
-      message: "¿Quiere que le informemos de los errores?",
+      message: !color
+        ? "¿Quiere que le informemos de los errores?"
+        : chalk.hex(color)("¿Quiere que le informemos de los errores?"),
       type: "list",
       choices: [
         {
-          name: "No",
-          value: "no"
+          name: !color ? "No" : chalk.hex(color)("No"),
+          value: "no",
         },
         {
-          name: "Si",
-          value: "si"
-        }
-      ]
-    }
+          name: !color ? "Si" : chalk.hex(color)("Si"),
+          value: "si",
+        },
+      ],
+    },
   ]);
   return respuestas;
 };
