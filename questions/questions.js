@@ -33,6 +33,21 @@ const preguntas = () => {
       ],
       when: (respuestas) => respuestas.transporte === "metro",
     },
+    {
+      name: "errores",
+      message: "¿Quiere que le informemos de los errores?",
+      type: "list",
+      choices: [
+        {
+          name: "No",
+          value: "no"
+        },
+        {
+          name: "Si",
+          value: "si"
+        }
+      ]
+    }
   ]);
   return respuestas;
 };
