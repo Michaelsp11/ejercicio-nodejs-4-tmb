@@ -1,6 +1,7 @@
 require("dotenv").config();
 const chalk = require("chalk");
 const { preguntas } = require("./questions/questions");
+const {coordenadasMetro, coordenadasMetros} = require("./datos/datosApi");
 
 const init = async () => {
   const respuestas = await preguntas();
@@ -12,5 +13,7 @@ const init = async () => {
     );
     process.exit(0);
   }
+  coordenadasMetros();
 };
 init();
+
