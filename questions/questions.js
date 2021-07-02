@@ -33,6 +33,13 @@ const preguntas = () => {
       ],
       when: (respuestas) => respuestas.transporte === "metro",
     },
+
+    {
+      name: "quelinea",
+      type: "input",
+      message: "¿Qué línea quiere consultar?",
+    when: (respuestas) => respuestas.transporte === "metro",
+    },
   ]);
   return respuestas;
 };
