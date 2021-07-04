@@ -21,7 +21,7 @@ const preguntas = (color, abrev) => {
       ],
     },
     {
-      name: "infoMetro",
+      name: "infoExtraMetro",
       message: !color
         ? "¿Qué información extra quiere obtener de cada parada?"
         : chalk.hex(color)(
