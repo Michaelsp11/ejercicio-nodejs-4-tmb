@@ -55,15 +55,17 @@ const preguntas = (color, abrev) => {
         },
         {
           name: !color ? "Si" : chalk.hex(color)("Si"),
-          value: "si"
-        }
+          value: "si",
+        },
       ],
       when: (respuestas) => respuestas.transporte === "metro",
     },
     {
-      name: "quelinea",
-      type: "input",
-      message: !color ?"¿Qué línea quiere consultar?":chalk.hex(color)("¿Qué línea quiere consultar?"),
+      name: "linea",
+      type: "number",
+      message: !color
+        ? "¿Qué línea quiere consultar?"
+        : chalk.hex(color)("¿Qué línea quiere consultar?"),
       when: (respuestas) => respuestas.transporte === "metro",
     },
   ]);
