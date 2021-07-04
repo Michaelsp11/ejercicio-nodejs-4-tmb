@@ -1,0 +1,19 @@
+[38;2;147;36;143mL2 Paral·lel - Badalona Pompeu Fabra[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Badalona Pompeu Fabra | Coordenadas: 2.244097,41.449054 | Fecha inauguración: 2010-07-10Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Passeig de Gràcia | Coordenadas: 2.168243,41.389416 | Fecha inauguración: 1995-09-24Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Encants | Coordenadas: 2.1827,41.407236 | Fecha inauguración: 1997-09-19Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Sant Roc | Coordenadas: 2.228606,41.435831 | Fecha inauguración: 1985-04-21Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Pep Ventura | Coordenadas: 2.237959,41.443905 | Fecha inauguración: 1985-04-21Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Sant Antoni | Coordenadas: 2.163241,41.379833 | Fecha inauguración: 1995-09-24Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Universitat | Coordenadas: 2.163913,41.384768 | Fecha inauguración: 1995-09-24Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Bac de Roda | Coordenadas: 2.195503,41.415162 | Fecha inauguración: 1997-09-19Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Artigues | Sant Adrià | Coordenadas: 2.217772,41.433848 | Fecha inauguración: 1985-04-21Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Verneda | Coordenadas: 2.209883,41.430004 | Fecha inauguración: 1985-04-21Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Paral·lel | Coordenadas: 2.169117,41.375004 | Fecha inauguración: 1995-12-30Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: La Pau | Coordenadas: 2.205608,41.424033 | Fecha inauguración: 1997-09-19Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Tetuan | Coordenadas: 2.175559,41.394887 | Fecha inauguración: 1995-09-24Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Monumental | Coordenadas: 2.179462,41.400524 | Fecha inauguración: 1995-09-24Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Clot | Coordenadas: 2.186835,41.410358 | Fecha inauguración: 1997-09-19Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Sant Martí | Coordenadas: 2.200724,41.419064 | Fecha inauguración: 1997-09-19Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Gorg | Coordenadas: 2.233441,41.440237 | Fecha inauguración: 1985-04-21Z[39m[38;2;147;36;143m[39m
+[38;2;147;36;143mEstación: Sagrada Família | Coordenadas: 2.175106,41.403985 | Fecha inauguración: 1995-09-24Z[39m
