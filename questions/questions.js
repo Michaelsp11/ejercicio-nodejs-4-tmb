@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const chalk = require("chalk");
 
-const preguntas = (color, abrev) => {
+const preguntas = (color) => {
   const respuestas = inquirer.prompt([
     {
       name: "transporte",
@@ -71,6 +71,37 @@ const preguntas = (color, abrev) => {
   ]);
   return respuestas;
 };
+const recibirResultados = (color) => {
+  const respuestas = inquirer.prompt([
+    {
+      name: "recibirResultados",
+      type: "list",
+      message: !color
+        ? "¿Quieres recibir los resultados por email?"
+        : chalk.hex(color)("¿Quieres recibir los resultados por email?"),
+      choices: [
+        {
+          name: !color ? "Si" : chalk.hex(color)("Si"),
+          value: "si",
+        },
+        {
+          name: !color ? "No" : chalk.hex(color)("No"),
+          value: "no",
+        },
+      ],
+    },
+    {
+      name: "direccionCorreo",
+      message: !color
+        ? "Dirección de correo: "
+        : chalk.hex(color)("Dirección de correo: "),
+      type: "input",
+      when: (respuestas) => respuestas.recibirResultados === "si",
+    },
+  ]);
+  return respuestas;
+};
 module.exports = {
   preguntas,
+  recibirResultados,
 };
